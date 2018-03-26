@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>背景background</title>
+<style type="text/css">
+#div1{
+	width:500px;
+	height:500px;
+	border:10px solid red;
+	background-color:yellow;
+	}
+#div2{
+	width:500px;
+	height:500px;
+	border:10px solid red;
+	background-color:yellow;
+	background-image:url(img/1.jpg);
+	background-repeat: no-repeat;
+	background-position:left ;
+	background-attachment: scroll;
+	}
+#div3{
+	width:500px;
+	height:500px;
+	border:10px solid red;
+	background:blue url(img/1.jpg) no-repeat center top scroll;
+	}
+/*内容是会撑开容器宽高;背景不会占用容器宽高
+	1,background-color 背景颜色  (颜色英文关键字,rgb,十六进制)
+	2,background-repeat 背景图是否重复
+				no-repeat 不重复
+				repeat-x  x轴重复
+				repeat-y  y轴重复
+				repeat	  x/y都重复
+	3,background-position:x y; 背景图位置
+				具体数值
+				left right center
+				top bottom center
+			
+			当第二个属性值没有填写，默认居中
+	4,background-attachment 背景图是否滚动
+				fixed	固定在浏览器可视区域
+				scroll	跟随滚动条滚动
+	5,background 复合样式
+			不分属性书写顺序的
+				颜色相关 图片相关
+
+
+
+*/
+</style>
+</head>
+
+<body>
+<div id="div1">
+	这是一段文字
+	<img src="img/1.jpg">
+</div>
+<div id="div2"></div>
+<div id="div3"></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>外边距margin</title>
+<style type="text/css">
+#box{
+	background-color: red;
+	border: 1px solid black;
+}
+#div1{
+	height: 50px;
+	background-color: pink;
+	margin: 100px 100px 200px 100px;
+	}
+#div2{
+	height: 50px;
+	background-color: yellow;
+	margin: 100px;
+		
+}
+/*
+1,margin 外边距：标签与标签之间的间隔（距离）
+2,margin复合写法 : top right bottom left
+3,margin的问题
+	3.1,父子级包含的时候自己的margin-top会传递给父级
+		解决方法：给父级添加border解决
+	3.2,上下外边距会被叠加压
+		解决技巧：
+			1,使用margin，将某一个元素方向设置成预想的值,margin叠压会取最大的margin值.
+			2,如果元素没有特殊特征，也可以用padding代替
+
+*/
+</style>
+</head>
+
+<body>
+<div id="box">
+<div id="div1">div1
+</div>
+<div id="div2">div2
+</div>
+</div>
+</body>
+</html>

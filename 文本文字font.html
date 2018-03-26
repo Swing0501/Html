@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文字文本font</title>
+<style type="text/css">
+/*文字设置*/
+#div1{
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+	font-family: "楷体";
+	border: 1px solid red;
+	line-height: 30px;
+	height: 30px;
+}
+
+#div2{
+	border: 1px solid red;
+	font:italic bold 20px/30px "宋体";
+	}
+/*文本设置*/
+#div3{
+	border:1px solid yellow;
+	color:red;
+	text-align:center;
+	font-size: 24px;
+ 	text-indent: 2em;
+	text-decoration: none;
+	letter-spacing: 15px;
+	
+}
+/*强制不换行*/
+#div4{
+	width: 100px;
+	border: 1px solid red;
+	white-space: nowrap;
+}
+
+
+/*
+文字设置
+font-weight 文字加粗
+			bold 加粗
+			normal 正常
+font-style 文字倾斜
+			italic 斜体
+			normal 正常
+font-size 文字大小
+font-family 字体
+line-height 行高	文字在一行里面所占用的位置
+				当行高的值与容器高度一致时，文字会垂直居中显示
+				
+			多行文字测量行高的方法：
+			1、确认文字大小
+			2、确认两行文字之间的空隙大小
+			3、空隙大小除以2，得出来的值就是每行文字的上下的空隙大小
+				3.1 当行高为奇数时，那么文字的上方要比下方少一个像素
+				3.2 当行高为偶数是，那么文字上下空隙值一致
+			4、通过辅助项测量多行文字的行高
+复合样式font：font-style | font-weight | font-size/line-height | font-family；
+			!!!font复合样式需要注意书写顺
+
+文本设置
+color  文字颜色
+text-align 文本对齐（显示）方式
+			left 默认值
+			right
+			center 
+text-decoration 文本修饰
+underline 下划线
+		  none 
+letter-spacing 字母间
+word-spacing   单词间距（以空格为解析单位）
+white-space	   强制不换行
+				nowrap 不换行
+				normal 正常
+测量文字大小时，最好是使用从上到下的方式去测量文字大小
+			记录：
+			16px 8px
+			12px 6px
+			字体格式不一样时，空格大小也不一样。
+			空格的大小：字体格式为宋体时，那么空格大小是当前文字大小的一半
+em 是根据字体大小来进行计算的 1em = 当前字体大小
+*/
+
+
+
+</style>
+</head>
+
+<body>
+<div id="div1">
+	欢迎大家来到妙味课堂
+</div>
+<div id="div2">
+	欢迎大家来到妙味课堂
+</div>
+<div id="div3">
+	欢迎大家来到妙味课堂
+</div>
+<div id="div4">
+	欢迎大家来到妙味课堂
+</div>
+</body>
+</html>

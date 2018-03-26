@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>边框border</title>
+<style>
+#div1{
+	width: 400px;
+	height: 400px;
+	border: 1px solid red;
+	border-top-color: black;
+}
+/*
+			边框组成
+				1、边框的粗细(width)
+				2、边框的样式(style): dashed/虚线 dotted/点 solid/实线
+				3、边框的颜色(color)
+				
+			边框的方向
+				top right bottom left
+				
+			border(top为例)
+				border-top
+					border-top-width
+					border-top-style
+					border-top-color
+*/
+/*边框三角形*/
+#div2{
+	width: 0;
+	height: 0;
+	border: 10px solid #fff;
+	/*border-top-color:#ccc;*/
+	border-left-color:#ccc;
+}
+</style>
+</head>
+
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+</body>
+</html>
